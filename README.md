@@ -6,6 +6,8 @@ Installs [solr](http://lucene.apache.org/solr/) and starts the service.
 
 This is a fork of David Radcliffe's [original chef-solr](https://github.com/dwradcliffe/chef-solr/blob/master/LICENSE) cookbook, updated (to some extent) for working with solr in 2019.
 
+Versioning starts at 0.7.0 as David Radcliffe's left off at 0.6.0
+
 There are some pretty big changes:
 1. Use install script for solr - this makes sure the correct system initialization
    is used, either init.d or systemd via LSB
