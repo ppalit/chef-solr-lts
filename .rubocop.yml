@@ -2,7 +2,7 @@ AllCops:
   Exclude:
     - vendor/**/*
     - bin/*
-    - spec/
+    - spec/**/*
     - metadata.rb
     - Berksfile
     - Rakefile

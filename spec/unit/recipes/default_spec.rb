@@ -11,9 +11,9 @@ describe 'solr-lts::default' do
     end
 
     # No longer part of the chef run directly - handled by solr install
-    #it 'creates the init script' do
+    # it 'creates the init script' do
     #  expect(chef_run).to create_file('/etc/init.d/solr')
-    #end
+    # end
 
     it 'enables the service' do
       expect(chef_run).to enable_service('solr')
@@ -30,9 +30,9 @@ describe 'solr-lts::default' do
       end
 
       # No longer part of the chef run directly - handled by solr install
-      #it 'creates the init script' do
-      #  expect(chef_run).to create_file('/etc/init.d/solr')
-      #end
+      # it 'creates the init script' do
+      #   expect(chef_run).to create_file('/etc/init.d/solr')
+      # end
     end
   end
 
