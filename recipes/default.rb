@@ -1,5 +1,4 @@
-#
-# Cookbook Name:: solr
+# Cookbook Name:: solr-lts
 # Recipe:: default
 #
 # Copyright 2019, Stephen Sadowski
@@ -14,18 +13,16 @@ begin
   # java install to fail
   if node['platform_family'] == 'debian'
     execute 'update_apt' do
-      command "apt-get update -y"
+      command 'apt-get update -y'
     end
   end
 end
 
-
-if node['solr']['install_java']
-  include_recipe 'java'
-end
+include_recipe 'java' if node['solr']['install_java']
 
 extract_path = "#{node['solr']['dir']}-#{node['solr']['version']}"
-solr_path = "#{extract_path}/#{node['solr']['version']}"
+# below is currently unused, may re-use in future
+# solr_path = "#{extract_path}/#{node['solr']['version']}"
 
 remote_file "/opt/solr-#{node['solr']['version']}.tgz" do
   source node['solr']['url']

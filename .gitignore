@@ -11,6 +11,7 @@ Berksfile.lock
 # Bundler
 bin/*
 .bundle/*
+.bundle/
 
 .kitchen/
 .ruby-version
