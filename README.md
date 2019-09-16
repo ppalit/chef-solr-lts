@@ -1,4 +1,4 @@
-# chef-solr-lts [![Build Status](https://travis-ci.org/sjsadowski/chef-solr-lts.png?branch=master)](https://travis-ci.org/sjsadowski/chef-solr-lts)
+# solr-lts [![Build Status](https://travis-ci.org/sjsadowski/chef-solr-lts.png?branch=master)](https://travis-ci.org/sjsadowski/chef-solr-lts)
 
 Installs [solr](http://lucene.apache.org/solr/) and starts the service.
 

@@ -4,7 +4,7 @@ maintainer_email 'stephen.sadowski@sjsadowski.com'
 license          'MIT'
 description      'Installs the solr search engine.'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version          '0.7.0'
+version          '0.7.1'
 chef_version     '>= 14.0'
 
 supports 'centos', '>= 7.0'
