@@ -5,15 +5,15 @@ license          'MIT'
 description      'Installs the solr search engine.'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version          '0.7.0'
-chef_version     '>= 14'
+chef_version     '>= 14.0'
 
-supports 'centos', '>= 7'
-supports 'redhat', '>= 7'
-supports 'scientific', '>= 7'
+supports 'centos', '>= 7.0'
+supports 'redhat', '>= 7.0'
+supports 'scientific', '>= 7.0'
 
-supports 'amazon', '>= 2'
+supports 'amazon', '>= 2.0'
 
-supports 'debian', '>= 8'
+supports 'debian', '>= 8.0'
 supports 'ubuntu', '>= 16.04'
 
 depends 'tar'
