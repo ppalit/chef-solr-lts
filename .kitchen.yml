@@ -1,0 +1,32 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: centos-7
+    driver:
+      box: 'centos/7'
+      customize:
+        memory: 2048
+  - name: debian-stretch
+    driver:
+      box: 'debian/stretch64'
+      customize:
+        memory: 2048
+  - name: ubuntu-1604
+    driver:
+      box: 'generic/ubuntu1604'
+      customize:
+        memory: 2048
+
+suites:
+  - name: solr-lts-default
+    run_list:
+      - recipe[solr-lts::default]
+    verifier:
+      inspec_tests:
+        - test/integration/default
+    attributes:
