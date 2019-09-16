@@ -13,7 +13,7 @@ supports 'scientific', '>= 7.0'
 
 supports 'amazon', '>= 2.0'
 
-supports 'debian', '>= 8.0'
+supports 'debian', '>= 9.0'
 supports 'ubuntu', '>= 16.04'
 
 depends 'tar'
